@@ -18,27 +18,12 @@ void draw()
   //SCENE:
   { 
         stroke( 0, 0, 127 );
-        fill ( 0,75, 255);
+        fill ( 0, 75, 255);
         rect ( 0, 0, 600, 250 );        //sky
         stroke( 0, 255, 0 );
         fill ( 0, 255, 0 );
         rect ( 0, 250, 600, 600 );      //ground
-        //House
-        stroke( 0, 0, 0 );
-        fill (165, 42, 42 );                         // Brown
-        triangle ( 100, 200, 200, 150, 300, 200 );  // Roof
-         fill ( 0, 0, 255 );                         // Blue
-         rect (125, 200, 150, 100 );                 // House
-         fill ( 255, 0, 0 );                         //Red
-         rect ( 160,250, 35,50 );                   //Door
-         fill (0, 0, 0 );
-         ellipse( 170,275, 5,5 );                  // door knob
-         fill ( 255, 255, 255 );                   // Window
-         rect (220, 225, 35, 35 );
-         stroke( 0, 0, 0 );
-         line (238, 225, 238, 260 );
-         line (220, 242, 255, 242 );
-         fill (255, 255, 0 );
+        fill (255, 255, 0 );
          ellipse( 100,100, 50,50 );          // Sun
          fill (0, 127, 0 );                   //tree
          stroke( 0, 127, 0 );
@@ -53,7 +38,23 @@ void draw()
          stroke ( 0, 127, 0 );
          triangle ( 325, 300, 450, 200, 575, 300 );
          fill (165, 42, 42 );
-         rect (445, 300, 25, 20 ); 
+         rect (445, 300, 25, 20 );  
+         //House
+        stroke( 0, 0, 0 );
+        fill (165, 42, 42 );                         // Brown
+        triangle ( 100, 200, 200, 150, 300, 200 );  // Roof
+         fill ( 0, 0, 255 );                         // Blue
+         rect (125, 200, 150, 100 );                 // House
+         fill ( 255, 0, 0 );                         //Red
+         rect ( 160,250, 35,50 );                   //Door
+         fill (0, 0, 0 );
+         ellipse( 170,275, 5,5 );                  // door knob
+         fill ( 255, 255, 255 );                   // Window
+         rect (220, 225, 35, 35 );
+         stroke( 0, 0, 0 );
+         line (238, 225, 238, 260 );
+         line (220, 242, 255, 242 );
+         
   }
   }
   

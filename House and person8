@@ -13,7 +13,7 @@ void setup()
        snowY=  100;
        
 }
-//DRAW: sky, ground, house, tree, moon//
+//DRAW: sky, ground, house, tree, moon, snowflakes//
 void draw()
 {
   //SCENE:
@@ -72,8 +72,10 @@ void draw()
         ellipse( snowX+300,snowY-25, 5, 5);  
         fill ( 255, 255, 255 );
         stroke ( 255, 255, 255 );
-        ellipse( snowX+450, snowY+75, 5, 5);  
+        ellipse( snowX+450, snowY+75, 5, 5);         
   } 
+  
+
   //// ACTION:  Follow the mouse.       
   {
             snowY=  snowY + 1;
@@ -103,12 +105,14 @@ void draw()
         fill (0, 0, 0 );
         ellipse( x+105, y+300, 5, 5);         //right eye
   }
- 
-  //MESSAGES: title and author     
+
+  //MESSAGES: title and author
+  
   {
-    fill (255, 255, 255 );
+    fill(255, 255, 255);
     text ("Snowy Night", 10, 20 );
     fill (0);
     text ("Nanette, CST112", 10, height -10 );
   }
+
 }

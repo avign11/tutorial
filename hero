@@ -18,7 +18,7 @@ void draw()
   //SCENE:
   { 
         stroke( 0, 0, 127 );
-        fill ( 0,0, 127);
+        fill ( 0,75, 255);
         rect ( 0, 0, 600, 250 );        //sky
         stroke( 0, 255, 0 );
         fill ( 0, 255, 0 );

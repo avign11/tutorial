@@ -74,7 +74,22 @@ void draw()
     ellipse (x+40, y-30, 60, 60 );
     //line  
    // line
+  
+ //gold nugget
+{
+  fill ( 255, 255, 0 );
+  ellipse ( 400, 400, 20, 10 );
+  stroke (255,255, 0 );
+  fill (255, 255, 0 );
+  triangle ( 500, 500, 520, 500, 510, 510 );
+  stroke (255, 255, 0 );
+  fill (255, 255, 0 );
+  triangle ( 500, 505, 520, 505, 510, 495 );
+}
     }
   }
+  
+  
+
   
   

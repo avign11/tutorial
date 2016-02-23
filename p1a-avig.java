@@ -26,7 +26,7 @@ void draw()
         fill ( 0, 255, 0 );
         rect ( 0, 250, 600, 600 );      //ground
         fill (255, 255, 0 );
-        ellipse( sunX, sunY, 50,50 );          // Sun
+        ellipse( sunX, sunY, 50,50 );          // sun
         fill (0, 127, 0 );                   //tree
         stroke( 0, 127, 0 );
         triangle ( 400, 150, 450, 100, 500, 150 );
@@ -72,7 +72,7 @@ void draw()
     rect (x, y, 80, 80 );
     fill ( 100, 0, 60 );
     ellipse (x+40, y-30, 60, 60 );
-    //line
+    //line  
    // line
     }
   }

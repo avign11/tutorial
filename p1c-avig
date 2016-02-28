@@ -39,7 +39,7 @@ void draw()
         stroke( 0, 0, 0 );
         fill (165, 42, 42 );                         // Brown
         triangle ( 100, 200, 200, 150, 300, 200 );  // Roof
-        fill ( 0, 0, 255 );                         // Blue
+        fill ( 50, 50, 150 );                         // Blue
         rect (125, 200, 150, 100 );                 // House
         fill ( 255, 0, 0 );                         //Red
         rect ( 160,250, 35,50 );                   //Door
@@ -60,16 +60,24 @@ void draw()
             y=  mouseY;
             
     }
-    //// HERO 
+    //// HERO
     {
     fill ( 250, 50, 250 );
-    rect (x, y, 80, 80 );
-    fill ( 100, 0, 60 );
-    ellipse (x+40, y-30, 60, 60 );
-    fill ( 100, 0, 60 );
-    ellipse ( x+20, y+85, 20, 10 );
-    fill ( 100, 0, 60 );
-    ellipse ( x+60, y+85, 20, 10 );
+    rect (25, 300, 80, 80 );
+    fill ( 204, 0, 204 );
+    ellipse (65, 270, 60, 60 );
+    fill ( 204, 0, 204 );
+    ellipse ( 45, 385, 20, 10 );
+    fill ( 204, 0, 204 );
+    ellipse ( 85, 385, 20, 10 );
+    fill ( 255, 255, 255 );
+    ellipse ( 50, 270, 10, 20 );
+    fill ( 255, 255, 255 );
+    ellipse ( 80, 270, 10, 20 );
+    fill ( 0, 0, 0 );
+    ellipse ( 50, 270, 5, 5 );
+    fill ( 0, 0, 0 );
+    ellipse ( 80, 270, 5, 5 );
   
  //gold nugget
 {

@@ -1,0 +1,109 @@
+//Nanette Avignone
+//CST112 Midterm
+
+float x = 0;
+float y = 0;
+float surface;
+float xBoat;
+float yBoat;
+float xFish;
+float yFish;
+float xDweller = 0;
+float yDweller = 0;
+float dxBoat;
+float dyBoat;
+float dxFish; 
+float dyFish;
+
+
+//SETUP
+void setup()
+{
+  size ( 600, 600 );
+  surface = height/3;
+  xBoat = 100;
+  yBoat = surface/6;
+  xFish = 350;
+  yFish = 350;
+}
+//DRAW
+void draw()
+{
+  scene();
+  boat();
+  moveboat();
+  fish();
+  movefish();
+  message();
+  dweller();
+}
+
+//SCENE
+void scene()
+{
+  background ( 0, 255, 255 );    //sky  
+  fill ( 0, 115, 0 );
+  rect ( x, surface, width, height );   //ocean
+}
+
+
+//DRAW BOAT
+void boat()
+{ 
+  stroke (255, 0, 0 );
+  fill ( 255, 0, 0 );  
+  rect (xBoat, surface, 100, -50 );    // boat
+  rect (xBoat+25, surface-50, 50, -25 );  //boat cabin
+  triangle (xBoat+100, surface, xBoat+100, 150, xBoat+150, 150 );  //boat bow  
+ // triangle (xBoat+100, surface, 200, 150, 250, 150 );  //boat bow  
+  fill (0);
+  text (" Titanic ", xBoat+25, yBoat+150 );   //boat name
+  
+     
+}
+
+//MOVE BOAT
+void moveboat()
+{
+   xBoat = xBoat+1;
+   if ( xBoat > width ) xBoat= 0;
+}
+
+//DRAW FISH
+void fish()
+{
+  stroke ( 255, 192, 203 );
+  fill ( 255, 192, 203 );
+  ellipse ( xFish+45, yFish, 100, 50 ); 
+  triangle ( xFish, yFish, xFish-50, yFish-25, xFish-50, yFish+25 );
+  //triangle ( xFish, yFish, 300, 375, 300, 325 );
+  fill (0);
+  text (" Goldie ", xFish+15, yFish );
+  ellipse (xFish+75, yFish-20, 10, 10 );   
+}
+
+
+//MOVE FISH
+void movefish()
+{
+  dxFish= random (2, 5 );
+  dyFish= random (-3, 3 );  
+  xFish = xFish + dxFish;   
+  yFish = yFish + dyFish; 
+   if ( xFish > width ) xFish= 0;
+}
+
+//DRAW BOTTOM DWELLER
+void dweller()
+{
+  stroke ( 50, 50, 50 );
+  fill ( 255, 255, 0 );
+  ellipse ( xDweller+75, yDweller+550, 75, 25 );
+}
+
+//MESSAGES
+void message()
+{
+  fill (255, 255, 255 );
+  text ("Nanette Avignone, CST112 Midterm", 10, height-10);
+}
